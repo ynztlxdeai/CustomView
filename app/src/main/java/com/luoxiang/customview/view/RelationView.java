@@ -68,7 +68,7 @@ public class RelationView
                 int b              = t + measuredHeight;
                 view.layout(l, t, r, b);
                 mPoints.add(new Point(view.getX() + measuredWidth / 2f, view.getBottom()));
-                paddingTop = 180 + measuredHeight + paddingTop;
+                paddingTop = 3 * measuredHeight + paddingTop;
             } else {
                 int t              = paddingTop;
                 int l              = left;
@@ -81,7 +81,7 @@ public class RelationView
                 view.layout(l, t, r, b);
                 mPoints.add(new Point(view.getX() + measuredWidth / 2f, view.getY()));
                 //因为下一个的left是改变的 因此要一直记录这个left值
-                left += measuredWidth + 48;
+                left += measuredWidth + measuredWidth / 3;
             }
         }
     }
@@ -103,7 +103,7 @@ public class RelationView
         //拿到控件的上下边距
         int height = getPaddingTop() + getPaddingBottom();
         Log.e(RelationView.class.getName() , "child heght = " + childTotelHeight );
-        height += childTotelHeight * 3 + 180;
+        height += childTotelHeight * 3;
         setMeasuredDimension(width, height);
     }
 

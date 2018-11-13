@@ -1,8 +1,10 @@
-package com.luoxiang.customview;
+package com.luoxiang.customview.activity;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
+
+import com.luoxiang.customview.R;
 
 public class MainActivity
         extends AppCompatActivity
