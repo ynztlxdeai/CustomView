@@ -68,7 +68,7 @@ public class RelationView
                 int b              = t + measuredHeight;
                 view.layout(l, t, r, b);
                 mPoints.add(new Point(view.getX() + measuredWidth / 2f, view.getBottom()));
-                paddingTop = 3 * measuredHeight + paddingTop;
+                paddingTop = 2 * measuredHeight + paddingTop;
             } else {
                 int t              = paddingTop;
                 int l              = left;
